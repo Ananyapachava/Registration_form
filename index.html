@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <form action="">
+            <div class="container">
+                <h1>Registration Form</h1>
+                <p>Please fill up the form to create an account.</p>
+                <hr>
+
+                <label for="uname"><b>Name</b></label>
+                <input type="text" placeholder="Enter your full name" name="uname" id="uname" required>
+
+                <label for="Email"><b>Email</b></label>
+                <input type="Email" placeholder="Enter your email" name="Email" id="Email" required>
+
+                <label for="pwd"><b>Password</b></label>
+                <input type="pwd" placeholder="Enter you password" name="pwd" id="pwd" onblur="checkpwdpat()" required>
+
+                <label id="wpwd">Password nust have uppercase,lowercase,number and symbol.Minimum 8 characters.</label>
+                <p>By creating an account you agree to our <a href="#">Terms and Conditions</a></p>
+
+                <button type="button" id="registrationbtn" onclick="reg()">Register</button>
+                <label id="success">Registration Successful</label>
+            </div>
+        </form>
+    </body>
+    <script src="app.js"></script>
+</html>
